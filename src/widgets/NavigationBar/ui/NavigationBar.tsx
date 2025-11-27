@@ -52,7 +52,7 @@ export function NavigationBar() {
           <NavLink
             key={item.path}
             to={item.path}
-            className="flex flex-col items-center gap-0.5 transition-colors"
+            className="flex flex-col items-center gap-0.5 transition-colors relative"
           >
             {({ isActive }) => (
               <>
@@ -74,6 +74,11 @@ export function NavigationBar() {
                   )}
                 >
                   {item.label}
+                  {item.path === '/rewards' && (
+                    <span className="absolute -top-2.5 -right-[105%] bg-accent-gold/20 text-accent-gold text-xs font-medium px-1.5 rounded-full">
+                      345,29k
+                    </span>
+                  )}
                 </span>
               </>
             )}
