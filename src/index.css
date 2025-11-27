@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-background: #1b1b1b;
+  --color-background-dark: #1e1e1e;
+
+  --color-surface: #222222;
+  --color-surface-light: #262626;
+  --color-surface-dark: #0d0d0d;
+  --color-surface-darker: #2e2e2e;
+
+  --color-accent-orange-quench: #ff8000;
+  --color-accent-orange: #f4a42c;
+  --color-accent-gold: #ecbd75;
+
+  --color-success: #97fca6;
+  --color-danger: #ff583a;
+  --color-bright-yellow: #f6c90f;
+  --color-secondary: #73767d;
+
+  --main-gradient: linear-gradient(160deg, #97fca6 -3.5%, #f6c90f 107%);
+  --main-gradient-10: linear-gradient(
+    160deg,
+    rgba(151, 252, 166, 0.1) -3.5%,
+    rgba(246, 201, 15, 0.1) 107%
+  );
+
+  --text-xxs: 10px;
+
+  --font-family-sans: 'Geist', ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@utility bg-main-gradient {
+  background: var(--main-gradient);
+}
+
+@utility bg-main-gradient-10 {
+  background: var(--main-gradient-10);
+}
+
+@utility text-main-gradient {
+  background: var(--main-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+body {
+  background-color: #1b1b1b;
+  color: #ffffff;
+  font-family: 'Geist', ui-sans-serif, system-ui, sans-serif;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slideUpFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

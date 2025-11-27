@@ -1,0 +1,11 @@
+export { default as IconHome } from './icons/icon-home.svg?react';
+export { default as IconHomeGradient } from './icons/icon-home-gradient.svg?react';
+export { default as IconPositions } from './icons/icon-positions.svg?react';
+export { default as IconProfile } from './icons/icon-profile.svg?react';
+export { default as IconEye } from './icons/icon-eye.svg?react';
+export { default as IconChevronDown } from './icons/icon-chevron-down.svg?react';
+export { default as IconHeart } from './icons/icon-heart.svg?react';
+export { default as IconConfig } from './icons/icon-config.svg?react';
+export { default as IconWallet } from './icons/icon-wallet.svg?react';
+export { default as IconBTC } from './icons/icon-btc.svg?react';
+export { default as IconUSDC } from './icons/icon-usdc.svg?react';
